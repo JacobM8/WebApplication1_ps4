@@ -1,0 +1,140 @@
+﻿<!--/**
+ * Author:    Jacob Morrison
+ * Date:      September 7, 2021
+ * Course:    CS 4540, University of Utah, School of Computing
+ * Copyright: CS 4540 and Jacob Morrison - This work may not be copied for use in Academic Coursework.
+ *
+ * I, Jacob Morrison, certify that I wrote this code from scratch and did
+ * not copy it in part or whole from another source.  Any references used
+ * in the completion of the assignment are cited in my README file and in
+ * the appropriate method header.
+
+ */-->
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center text_background_white fit_background_and_center" id="applicants" style="opacity: 0.9"><!--worked with TA for 30 minutes couldn't get opacity to work with css class'-->
+    <h1 class="display-4">Application Form</h1>
+    <p> Fill out the following form to be considered for a Teaching Assistant position. </p>
+</div>
+<div id="application_form" class="text_background_white" style="opacity: 0.9"><!--worked with TA for 30 minutes couldn't get opacity to work with css class'-->
+    <form>
+        <div class="form-group">
+            <label for="formGroupFullName">Full Name</label>
+            <input type="text" class="form-control" id="formGroupFullName" placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@utah.edu">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="formGroupDepartment">Department</label>
+            <input type="text" class="form-control" id="formGroupDepartment" placeholder="Example: School of Computing">
+        </div>
+        <div class="form-group">
+            <label for="FormControlSelectGPA">Select GPA</label>
+            <select class="form-control" id="FormControlSelectGPA">
+                <option>4.0</option>
+                <option>3.9</option>
+                <option>3.9</option>
+                <option>3.7</option>
+                <option>3.6</option>
+                <option>3.5</option>
+                <option>3.4</option>
+                <option>3.3</option>
+                <option>3.2</option>
+                <option>3.1</option>
+                <option>3.0</option>
+                <option>2.9</option>
+                <option>2.8</option>
+                <option>2.7</option>
+                <option>2.6</option>
+                <option>2.5</option>
+                <option>2.4</option>
+                <option>2.3</option>
+                <option>2.2</option>
+                <option>2.1</option>
+                <option>2.0</option>
+            </select>
+        </div>
+        <label> Are you a graduate or undergraduate student? </label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="RadioGraduateStudent" value="GraduateStudent">
+            <label class="form-check-label" for="RadioGraduateStudent">
+                Graduate Student
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="RadioUndergraduateStudent" value="UndergraduateStudent">
+            <label class="form-check-label" for="RadioUndergraduateStudent">
+                Undergraduate Student
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="formGroupSemestersCompleted">How many semesters have you completed at the University of Utah? </label>
+            <input type="text" class="form-control" id="formGroupSemestersCompleted" placeholder="Enter a whole number">
+        </div>
+        <div class="form-group">
+            <label for="formGroupSemestersRemaining">How many semesters do have you remaining at the University of Utah? </label>
+            <input type="text" class="form-control" id="formGroupSemestersRemaining" placeholder="Enter a whole number">
+        </div>
+        <label> Select all classes you are interested in applying for a teaching assistant position. </label>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1400">
+            <label class="form-check-label" for="defaultCheck1400">
+                CS 1400
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2420">
+            <label class="form-check-label" for="defaultCheck2420">
+                CS 2420
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3500">
+            <label class="form-check-label" for="defaultCheck3500">
+                CS 3500
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3505">
+            <label class="form-check-label" for="defaultCheck3505">
+                CS 3505
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck4150">
+            <label class="form-check-label" for="defaultCheck4150">
+                CS 4150
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="InterestedClassGrades">Enter the class number and grade you received for each class you are interested in.</label>
+            <textarea class="form-control" id="ClassGradeReceived" rows="3" placeholder="Example: 'CS1400 - A'"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="PersonalStatement">Why will you be a good teaching assistant?</label>
+            <textarea class="form-control" id="PersonalStatement" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="PersonalSkills">What programming languages and technologies do you know well enough that you can teach them?</label>
+            <textarea class="form-control" id="PersonalStatement" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="PersonalProjects">What projects have you made using these technologies?</label>
+            <textarea class="form-control" id="PersonalStatement" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="Resume">Please attach your resume.</label>
+            <input type="file" class="form-control-file" id="Resume">
+        </div>
+        <div class="form-group">
+            <label for="formGroupLinkdedIn">Please enter your LinkedIn URL</label>
+            <input type="text" class="form-control" id="formGroupLinkedIn" placeholder="LinkedIn URL">
+        </div>
+        <button type="submit" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Submit application, you can edit later if needed.">Submit</button>
+    </form>
+</div>

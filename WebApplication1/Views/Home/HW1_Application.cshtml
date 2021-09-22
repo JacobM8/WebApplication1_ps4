@@ -1,0 +1,45 @@
+﻿﻿
+<!--/**
+* Author:    Jacob Morrison
+* Date:      September 23, 2021
+* Course:    CS 4540, University of Utah, School of Computing
+* Copyright: CS 4540 and Jacob Morrison - This work may not be copied for use in Academic Coursework.
+*
+* I, Jacob Morrison, certify that I wrote this code from scratch and did
+* not copy it in part or whole from another source.  Any references used
+* in the completion of the assignment are cited in my README file and in
+* the appropriate method header.
+
+*/-->
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="applicant_name" class="default_header text_background_white center fit_background_and_center">
+    <h1 class="center_text">Application for Cosmo</h1>
+</div>
+
+<div id="applicant_image">
+    <figure id="applicants_photo">
+        <img src="~/images/Cosmo.jpg" alt="Picture of Cosmo" align="right" />
+    </figure>
+</div>
+
+<div id="courses_applied_for" class="text_background_white fit_background">
+    <p> Courses applied for: </p>
+    <ul class="info_list">
+        <li><a href="/Home/Course"> CS 1400 </a></li>
+        <li><a href="/Home/Course"> CS 2420 </a></li>
+    </ul>
+</div>
+
+<div id="main_info" class="text_background_white fit_background">
+    <p> Personal Information </p>
+    <ul class="info_list">
+        <li> UID: u0647108 </li>
+        <li> Email: cosmo@kramericainc.com </li>
+        <li> Phone: 801-123-4567 </li>
+        <li> LinkedIn: <a href="https://www.linkedin.com/in/jacob-morrison-2a74b98b/"> Cosmo's LinkedIn </a></li>
+        <li> Resume: <a href="~/images/JacobMorrisonResume.pdf"> Cosmo's Resume </a></li>
+    </ul>
+</div>

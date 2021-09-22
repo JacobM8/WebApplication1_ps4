@@ -9,9 +9,14 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 sticky-top">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">WebApplication1</a>
+                <nav class="navbar navbar-light bg-light">
+                    <a class="navbar-brand nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                        <img src="/images/UULogo.png" width="30" height="30" alt="UULogo">
+                    </a>
+                </nav>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">TA Application</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -21,10 +26,36 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Options
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/Home/HW1_Application">HW1_Application</a>
+                                <a class="dropdown-item" href="/Home/HW2_Edit">HW2_Edit</a>
+                                <a class="dropdown-item" href="/Home/HW2_Index">HW2_Index</a>
+                                <a class="dropdown-item" href="/Home/Applicants">Applicants</a>
+                                <a class="dropdown-item" href="/Home/CourseList">Course List</a>
+                                <a class="dropdown-item" href="/Home/Edit">Application Form</a>
+                                <a class="dropdown-item" href="/Home/Index">Applicant's Information</a>
+                            </div>
                         </li>
                     </ul>
+                    <div class="navbar-collapse collapse d-sm-inline-flex">
+                        <ul class="navbar-nav ml-auto">
+                            <li>
+                                <a href="/Applications/Index">
+                                    <div>
+                                        <span id="nav-link-applicant" class="tc_1"> Cosmo, </span>
+                                    </div>
+                                    <span id="nav-link-applicantType" class="tc_1"> Student </span>
+                                </a>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-outline-dark ml-4">Logout</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>

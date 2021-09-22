@@ -1,0 +1,64 @@
+﻿<!--/**
+ * Author:    Jacob Morrison
+ * Date:      September 7, 2021
+ * Course:    CS 4540, University of Utah, School of Computing
+ * Copyright: CS 4540 and Jacob Morrison - This work may not be copied for use in Academic Coursework.
+ *
+ * I, Jacob Morrison, certify that I wrote this code from scratch and did
+ * not copy it in part or whole from another source.  Any references used
+ * in the completion of the assignment are cited in my README file and in
+ * the appropriate method header.
+
+ */-->
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center text_background_white fit_background_and_center" id="applicants" style="opacity: 0.9">
+    <h1 class="display-4">Application Information</h1>
+</div>
+<div id="applicant_image">
+    <figure id="applicants_photo">
+        <img src="~/images/Cosmo.jpg" alt="Picture of Cosmo" align="right" />
+    </figure>
+</div>
+<div id="applicant_info" class="fit_background text_background_white" style="opacity: 0.9">
+    <label class="font-weight-bold"> Personal Information </label>
+    <ul class="ul_no_bullets">
+        <li class="font-weight-bold"> Name: </li>
+        <li> Cosmo Kramer </li>
+        <li class="font-weight-bold">Email: </li>
+        <li> cosmo@kramericainc.com </li>
+        <li class="font-weight-bold">Phone Number: </li>
+        <li> 801-123-4567 </li>
+    </ul>
+    <label class="font-weight-bold"> Academic Information </label>
+    <ul class="ul_no_bullets">
+        <li class="font-weight-bold"> Department: </li>
+        <li> School of Computing </li>
+        <li class="font-weight-bold"> GPA: </li>
+        <li> 4.0 </li>
+        <li class="font-weight-bold"> Graduate Student Status: </li>
+        <li> No </li>
+        <li class="font-weight-bold"> Semesters at University of Utah: </li>
+        <li> 6 </li>
+        <li class="font-weight-bold"> Semesters Remaining Until Graduation: </li>
+        <li> 2 </li>
+        <li class="font-weight-bold"> Courses interested For TA Positions: </li>
+        <li> CS 1400, CS 2420 </li>
+        <li class="font-weight-bold"> Grade Received in Interesed Courses: </li>
+        <li> CS 1400 - A, CS 2420 A </li>
+        <li class="font-weight-bold"> Personal Statement: </li>
+        <li> I am smart and will be a good TA. </li>
+        <li class="font-weight-bold"> Skills: </li>
+        <li> C#, Java, MySQL, Amazon AWS </li>
+        <li class="font-weight-bold"> Personal Projects: </li>
+        <li> Sandstorm </li>
+        <li class="font-weight-bold"> Resume: </li>
+        <li> <a href="~/images/JacobMorrisonResume.pdf" target="_blank"> Click here to view resume. </a></li>
+        <li class="font-weight-bold"> LinkedIn: </li>
+        <li> <a href="https://www.linkedin.com/in/jacob-morrison-2a74b98b/" target="_blank"> View LinkedIn Profile </a></li>
+    </ul>
+    <label class="font-weight-bold"> Click here to make changes to your application. </label>
+    <button type="submit" class="btn btn-primary text_color_white" href="/Home/ApplicaitonForm"> Edit </button>
+</div>

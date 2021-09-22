@@ -28,6 +28,21 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        public IActionResult HW1_Application()
+        {
+            return View();
+        }
+
+        public IActionResult HW2_Edit()
+        {
+            return View();
+        }
+
+        public IActionResult HW2_Index()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
