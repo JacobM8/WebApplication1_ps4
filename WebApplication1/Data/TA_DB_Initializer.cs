@@ -6,7 +6,7 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Data
 {
-    public class DBInitializer
+    public class TA_DB_Initializer
     {
         public static void Initialize(TA_DB context)
         {
